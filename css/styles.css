@@ -19,10 +19,10 @@
 
 .fotos-inicio {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    gap: 20px; /* Espacio entre imágenes */
+    justify-content: center; 
+    gap: 20px; 
     padding: 5%;
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%; 
     flex-direction: row;
 }
 
@@ -36,7 +36,7 @@
 
 .nosotros h2 {
   text-align: center;
-  font-size: 2.5em; /* Podés ajustar el tamaño según tu diseño */
+  font-size: 2.5em; 
   margin-bottom: 1em;
   font-weight: bold;
 }
@@ -44,9 +44,9 @@
 .contenedor-nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5em; /* Espacio entre columnas */
+  gap: 1.5em; 
   max-width: 1000px;
-  margin: 0 auto; /* Centra el contenedor */
+  margin: 0 auto; 
   padding: 0 1em;
 }
 
@@ -241,7 +241,7 @@
   margin-top: 1.5em;
   width: 100%;
   padding: 0.8em;
-  background-color: #073046; /* Podés poner el color del club */
+  background-color: #073046; 
   color: white;
   border: none;
   border-radius: 8px;

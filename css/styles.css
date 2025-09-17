@@ -1,42 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* HEADER */
-
-
-.navbar-brand{
-    max-height: 10%;
-    justify-content: center;
+.navbar-brand {
+  max-height: 10%;
+  justify-content: center;
 }
 
 .carousel-item {
-    max-height: 400%;
+  max-height: 400%;
 }
-
-/* INDEX */
 
 .fotos-inicio {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    padding: 5%;
-    width: 100%; 
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5%;
+  width: 100%;
+  flex-direction: row;
 }
-
 .fotos-inicio img {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
-
 
 .nosotros h2 {
   text-align: center;
-  font-size: 2.5em; 
+  font-size: 2.5em;
   margin-bottom: 1em;
   font-weight: bold;
 }
@@ -44,34 +37,17 @@
 .contenedor-nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5em; 
+  gap: 1.5em;
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 1em;
 }
-
 .contenedor-nosotros h3 {
   font-size: 1.1em;
   line-height: 1.6;
   margin: 0;
 }
-/* QUIENES SOMOS */
-/* .quienes-somos {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 50px;
-}
 
-.quienes-somos h1 {
-    font-size: 2.5rem;
-    color: #0d6efd;
-    margin-bottom: 20px;
-}
-
-.quienes-somos h2 {
-    font-size: 1.5rem;
-    color: #343a40;
-} */
 .quienes-somos {
   max-width: 1000px;
   margin: 0 auto;
@@ -85,54 +61,43 @@
   margin-bottom: 3em;
   gap: 2em;
 }
-
 .bloque img {
   width: 45%;
   border-radius: 8px;
   object-fit: cover;
 }
-
 .bloque .texto {
   width: 55%;
 }
-
 .bloque h3 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
-
 .bloque p {
   font-size: 1em;
   line-height: 1.6;
 }
-
-/* Responsive para móviles */
 @media (max-width: 768px) {
   .bloque {
     flex-direction: column;
   }
-
   .bloque img,
   .bloque .texto {
     width: 100%;
   }
 }
 
-/* ACTIVIDADES */
-
 .contenedor-act {
-    display: flex;
-    margin: 10%;
-    justify-content: space-evenly;
-
+  display: flex;
+  margin: 10%;
+  justify-content: space-evenly;
 }
-/* LOGROS DEPORTIVOS */
+
 .logros-deportivos {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em 1em;
 }
-
 .logros-deportivos h2 {
   font-size: 2em;
   margin-bottom: 1em;
@@ -143,39 +108,38 @@
   font-size: 1.4em;
   margin-top: 1em;
 }
-
 .categoria ul {
   list-style-type: none;
   padding-left: 0;
 }
-
 .categoria li {
   margin-bottom: 0.5em;
   font-size: 1em;
 }
 
-/* Carrusel horizontal */
 .carrusel-fotos {
   overflow: hidden;
   width: 100%;
   background: #f5f5f5;
   padding: 1em 0;
 }
-
-.cinta {
+.carrusel-fotos .cinta {
   display: flex;
   gap: 1em;
   width: max-content;
   animation: mover 60s linear infinite;
 }
-
-.cinta img {
+.carrusel-fotos .cinta img {
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .carrusel-fotos .cinta img {
+    height: 100px;
+  }
+}
 
-/* Animación infinita */
 @keyframes mover {
   0% {
     transform: translateX(0);
@@ -184,22 +148,6 @@
     transform: translateX(-50%);
   }
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cinta img {
-    height: 100px;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cinta img {
-    height: 100px;
-  }
-}
-/* CONTACTO */
-
 .contacto {
   display: flex;
   justify-content: center;
@@ -215,18 +163,15 @@
   max-width: 600px;
   width: 100%;
 }
-
 .formulario-contacto h2 {
   text-align: center;
   margin-bottom: 1em;
 }
-
 .formulario-contacto label {
   display: block;
   margin-top: 1em;
   font-weight: bold;
 }
-
 .formulario-contacto input,
 .formulario-contacto textarea {
   width: 100%;
@@ -236,12 +181,11 @@
   border-radius: 8px;
   font-size: 1em;
 }
-
 .formulario-contacto button {
   margin-top: 1.5em;
   width: 100%;
   padding: 0.8em;
-  background-color: #073046; 
+  background-color: #073046;
   color: white;
   border: none;
   border-radius: 8px;
@@ -249,16 +193,8 @@
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .formulario-contacto button:hover {
   background-color: #3360bf;
 }
 
-/*---------------- MEDIA QUERI -------------------*/
-/* 
-@media (max-width: 768px) {
-  .contenedor-nosotros {
-    grid-template-columns: 1fr;
-  }
-}
- */
+/*# sourceMappingURL=styles.css.map */

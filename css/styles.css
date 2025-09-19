@@ -27,9 +27,10 @@
   border-radius: 10px;
 }
 
-.nosotros h2 {
+.nosotros h1 {
   text-align: center;
   font-size: 2.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
   font-weight: bold;
 }
